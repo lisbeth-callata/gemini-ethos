@@ -16,41 +16,26 @@
 
 ## 📝 Gemini 3 Integration (~200 words)
 
-**Gemini Ethos** is a **Marathon Agent** that autonomously patrols natural heritage sites for **hours or days**, detecting and responding to irresponsible tourist behavior in real-time.
-
-### Gemini 3 Features Used:
-
-1. **Thought Signatures™** - Every analysis includes a transparent reasoning chain. The agent explicitly shows what it observed, what inferences it made, and what uncertainties exist. This creates a forensic audit trail for each decision.
-
-2. **Thinking Levels** - The agent dynamically adjusts reasoning depth (low/medium/high) based on situation complexity. Routine checks use "low" thinking, while critical incidents trigger "high" reasoning with full cause-effect analysis.
-
-3. **Self-Correction** - During long-running patrols, the agent reviews its own past assessments and corrects mistakes. If it over-reacted to a situation, it recalibrates future analyses automatically.
-
-4. **Context Continuity** - State is maintained across multi-step operations. The agent "remembers" patterns from previous images, building a coherent understanding over the entire patrol duration.
-
-5. **Autonomous Multi-Tool Execution** - The agent chains tool calls (regulation lookup, alert level calculation, incident recording) without human supervision, escalating only when truly necessary.
-
-This isn't a simple vision analyzer - it's an **autonomous guardian** that operates independently for extended periods, making Gemini 3's enhanced reasoning capabilities essential.
+**Gemini Ethos** is a **Marathon Agent** designed to promote responsible tourism. It utilizes the Gemini 3 Flash model via Google Vertex AI to analyze interactions between tourists and nature, identifying species and evaluating ethical risks in real-time.
 
 ---
 
-## 🎯 Why This Matters (Potential Impact)
-
-- **$42 billion** wildlife tourism industry threatened by irresponsible behavior
-- **70%** of natural sites report tourist-caused environmental damage
-- **UNESCO** sites require 24/7 monitoring impossible with human staff alone
-- This agent can patrol **continuously** at a fraction of the cost
+### Key Features
+- **Multimodal Analysis:** Objective identification of flora, fauna, and human behavior using computer vision.
+- **Transparent Reasoning:** Generates an inference chain (Thought Signatures™) to explain the logic behind each risk assessment.
+- **Scalable Architecture:** Deployed on Google Cloud Run with auto-scaling and high availability.
+- **Causal Analysis:** Evaluates immediate and long-term impacts of human actions on specific ecosystems.
 
 ---
 
-## 🚀 Quick Start
+### Setup and Deployment
 
-### Prerequisites
+## Prerequisites
 - Java 17+
 - Maven 3.9+
-- Google Cloud Project with Vertex AI enabled
+- Google Cloud SDK (gcloud) installed.
 
-### Run in 30 Seconds
+### Environment Variables
 
 ```bash
 # Clone
@@ -188,7 +173,7 @@ curl http://localhost:8080/api/v3/mission/MISSION-XXXX
 
 ---
 
-## 📍 Supported Parks
+## Supported Parks
 
 | Park | Country | Ecosystem | Unique Rules |
 |------|---------|-----------|--------------|
@@ -200,7 +185,7 @@ curl http://localhost:8080/api/v3/mission/MISSION-XXXX
 
 ---
 
-## 📊 Technical Metrics
+## Technical Metrics
 
 | Metric | Value |
 |--------|-------|
@@ -214,69 +199,6 @@ curl http://localhost:8080/api/v3/mission/MISSION-XXXX
 
 ---
 
-## 🎬 Demo Video
-
-📺 **[Watch 3-Minute Demo Video](https://youtube.com/your-demo-link)**
-
-The video demonstrates:
-1. Starting a patrol mission via API
-2. Analyzing images with thought chain transparency
-3. Self-correction when the agent detects its own mistake
-4. Automatic escalation for critical incidents
-5. Final mission summary with statistics
-
----
-
-## 📁 Project Structure
-
-```
-gemini-ethos/
-├── src/main/java/com/gemini/ethos/
-│   ├── agent/
-│   │   ├── EthosGuardianAgent.java    # Core AI agent
-│   │   ├── MarathonPatrolAgent.java   # Long-running orchestrator ⭐
-│   │   └── PatrolMission.java         # Mission state management ⭐
-│   ├── api/
-│   │   ├── EthosApiServer.java        # Standard API
-│   │   └── MarathonApiServer.java     # Marathon API v3 ⭐
-│   ├── config/
-│   │   └── VertexAIConfig.java        # GCP configuration
-│   ├── model/
-│   │   ├── AnalysisResult.java        # Response DTOs
-│   │   └── StreamingFrame.java        # Input DTO
-│   ├── tools/
-│   │   └── RegulationsLookupTool.java # Function calling
-│   └── Application.java               # Entry point
-├── frontend/
-│   ├── index.html                     # Quick Analyzer UI
-│   ├── app.js                         # Quick Analyzer logic
-│   ├── marathon-dashboard.html        # Marathon Agent Dashboard ⭐
-│   └── marathon-app.js                # Dashboard frontend logic ⭐
-├── pom.xml
-└── README.md
-```
-
----
-
-## 🏆 Hackathon Alignment
-
-| Criterion | How We Address It |
-|-----------|-------------------|
-| **Technical Execution (40%)** | Full Java backend with Vertex AI SDK, Function Calling, async processing, Marathon Agent architecture |
-| **Innovation (30%)** | Not a simple analyzer - autonomous multi-day patrols with self-correction and thought transparency |
-| **Potential Impact (20%)** | Protects $42B wildlife tourism industry and UNESCO sites worldwide |
-| **Presentation (10%)** | Clear architecture diagrams, API docs, and demo video |
-
-### Why This Is NOT a "Simple Vision Analyzer"
-
-✅ **Multi-step autonomous execution** - Missions run for hours without supervision  
-✅ **Self-correcting** - Agent improves its own accuracy over time  
-✅ **Thought transparency** - Every decision is explainable  
-✅ **Context continuity** - Remembers patterns across hundreds of images  
-✅ **Escalation logic** - Knows when to ask for human help  
-
----
-
 ## 👥 Team
 
 Built with ❤️ by the Gemini Ethos Team for the Google DeepMind Gemini 3 Global Hackathon.
@@ -286,3 +208,4 @@ Built with ❤️ by the Gemini Ethos Team for the Google DeepMind Gemini 3 Glob
 <p align="center">
   <b>🌍 Protecting our planet's natural heritage, one patrol at a time 🌿</b>
 </p>
+
