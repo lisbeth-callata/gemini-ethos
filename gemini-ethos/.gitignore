@@ -1,0 +1,30 @@
+# Build artifacts
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# Environment files
+.env
+*.env.local
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Credentials (NEVER commit these)
+*.json
+!package.json
+credentials/
+secrets/
+
+# Temp files
+*.tmp
+*.temp
