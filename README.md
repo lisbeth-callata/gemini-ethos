@@ -39,7 +39,7 @@
 
 ```bash
 # Clone
-git clone https://github.com/your-username/gemini-ethos.git
+git clone https://github.com/lisbeth-callata/gemini-ethos.git
 cd gemini-ethos
 
 # Build
@@ -208,4 +208,5 @@ Built with ❤️ by the Gemini Ethos Team for the Google DeepMind Gemini 3 Glob
 <p align="center">
   <b>🌍 Protecting our planet's natural heritage, one patrol at a time 🌿</b>
 </p>
+
 
